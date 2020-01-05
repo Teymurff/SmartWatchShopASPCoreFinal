@@ -1,0 +1,146 @@
+﻿@model HomePageVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <!-- Section Smart Future Start -->
+    <section class="section-smartfuture" id="home" style="background: url(/images/@Model.SmartFuture.Image) center; background-size: cover;">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center" style="height:626px;">
+                <div class="col-lg-10 content">
+                    <h5>@Model.SmartFuture.Subtitle</h5>
+                    <h1>@Model.SmartFuture.Title</h1>
+                    <a href="#ourproducts">@Model.SmartFuture.Button</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Smart Future End -->
+    <!-- Section Brand New App Start -->
+    <section class="section-brandnewapp" id="about">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 items-left">         
+                    <h6>@Model.BrandNewApp.SubtitleTop</h6>
+                    <h1>@Model.BrandNewApp.Title</h1>
+                    <p><span>@Model.BrandNewApp.SubtitleBottom</span></p>
+                    <p>
+                        @Model.BrandNewApp.Paragraph
+                    </p>
+                    <a href="#">@Model.BrandNewApp.Button</a>
+                </div>
+                <div class="col-lg-6 items-right" style="background: url(/images/@Model.BrandNewApp.Image) no-repeat center;background-size: cover;">
+                    <div class="overlay"></div>
+                    <a href="https://www.youtube.com/watch?v=Uz2J2Ztofg4" target="_blank">
+                        <img class="img-fluid" src="~/images/@Model.BrandNewApp.IconImage" alt="playicon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Brand New App End -->
+    <!-- Section Some Features Start -->
+    <section class="section-somefeatures" id="service">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 items-title">
+                    <h1>Some Features that Made us Unique</h1>
+                    <p>Who are in extremely love with eco friendly system.</p>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model.SomeFeatures)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="items-service">
+                            <h4 class="d-flex align-items-center">
+                                <span class="@item.Icon mr-3 mb-1"
+                                      style="font-size:20px;"></span> @item.Title
+                            </h4>
+                            <p>
+                                @item.Paragraph
+                            </p>
+                        </div>
+                    </div>
+                }            
+            </div>
+        </div>
+    </section>
+    <!-- Section Some Features End -->
+    <!-- Section Globally Connected Start -->
+    <section class="section-globallyconnected">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 items-left">
+                    <img class="img-fluid" src="~/images/@Model.GloballyConnected.Image" alt="watch">
+                </div>
+                <div class="col-lg-6 items-right">
+                    <h1>@Model.GloballyConnected.Title</h1>
+                    <p><span>@Model.GloballyConnected.Subtitle</span></p>
+                    <p>
+                        @Model.GloballyConnected.Paragraph
+                    </p>
+                    <a href="#">get details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Globally Connected End -->
+    <!-- Section Products With Categories Start -->
+    <section class="section-productswithcategories" id="ourproducts">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="category-content col-lg-10">
+                    <div class="form-group">
+                        <h1>Best Sellers</h1>
+                        @*<select class="form-control form-control-lg" asp-for="Product.BrandId" asp-items="ViewBag.Brands as SelectList"></select>
+                        <span asp-validation-for="Product.BrandId" class="text-danger"></span>*@
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model.Products.Where(s => s.Status == true))
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-content">
+                            <img class="img-fluid" style="height:230px;" src="~/images/@item.Images.FirstOrDefault(v=>v.ProductId==item.Id).ProductImage" alt="watchproduct">
+                            <div class="items-content">
+                                <h4>@item.Name</h4>
+                                <h6>@item.Price AZN</h6>
+                                @*<a href="#">Product Details</a>*@
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <!-- Section Products With Categories End -->
+    <!-- Section Faq Start -->
+    <section class="section-faq" id="faq">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="ask-content">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Who are in extremely love with eco friendly system.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    @foreach (var item in Model.Faqs)
+                    {
+                        <button class="accordion-faq">@item.Question</button>
+                        <div class="panel-faq">
+                            <p>
+                                @item.Answer
+                            </p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Faq End -->
+</main>
+

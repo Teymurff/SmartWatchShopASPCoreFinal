@@ -1,0 +1,52 @@
+﻿@model BrandNewApp
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table-bordered table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Image Icon</th>
+                            <th>Subtitle Top</th>
+                            <th>Title</th>
+                            <th>Subtitle Bottom</th>
+                            <th>Paragraph</th>
+                            <th>Button</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="~/images/@Model.Image" width="150" />
+                            </td>
+                            <td>
+                                <img src="~/images/@Model.IconImage" width="150" />
+                            </td>
+                            <td class="align-middle">@Model.SubtitleTop</td>
+                            <td class="align-middle">@Model.Title</td>
+                            <td class="align-middle">@Model.SubtitleBottom</td>
+                            <td class="align-middle">@Model.Paragraph</td>
+                            <td class="align-middle">@Model.Button</td>
+                            <td class="align-middle">
+                                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info btn-block">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+}
+

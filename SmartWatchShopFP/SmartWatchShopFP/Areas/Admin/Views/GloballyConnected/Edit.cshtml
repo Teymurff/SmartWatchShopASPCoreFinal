@@ -1,0 +1,55 @@
+﻿@model GloballyConnected
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Photo"></label>
+                        <input asp-for="Photo" class="form-control" />
+                        <span asp-validation-for="Photo" class="text-danger"></span>
+                    </div>                
+                    <div class="form-group my-3">
+                        <label>Current image</label>
+                        <img src="~/images/@Model.Image" width="200" />
+                        <input type="hidden" name="Image" value="@Model.Image" />
+                    </div>                 
+                    <div class="form-group">
+                        <label asp-for="Title"></label>
+                        <input asp-for="Title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Subtitle"></label>
+                        <input asp-for="Subtitle" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Paragraph"></label>
+                        <input asp-for="Paragraph" class="form-control">
+                    </div>                  
+                    <div class="form-group">
+                        <label asp-for="Button"></label>
+                        <input asp-for="Button" class="form-control">
+                    </div>
+
+                    <input type="submit" class="btn btn-success btn-lg btn-block" value="Edit" />
+                </form>
+
+                <a asp-action="Index" class="btn btn-primary btn-block btn-lg mt-3">Back to Index</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+}
+
+

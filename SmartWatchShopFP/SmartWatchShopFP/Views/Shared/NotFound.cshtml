@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Not Found";
+}
+@section styles {
+    <link href="https://fonts.googleapis.com/css?family=Chango&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+}
+<partial name="_Pages" />
+<div id="notfound">
+    <div class="notfound">
+        <div>
+            <div class="notfound-404">
+                <h1>!</h1>
+            </div>
+            <h2>Error<br>@ViewBag.ErrorMessage</h2>
+        </div>
+        <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable. <a asp-controller="Home" asp-action="Index">Back to homepage</a></p>
+    </div>
+</div>

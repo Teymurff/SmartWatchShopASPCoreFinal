@@ -1,0 +1,49 @@
+﻿@model Footer
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="AddressFirstLine"></label>
+                        <input asp-for="AddressFirstLine" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AddressSecondLine"></label>
+                        <input asp-for="AddressSecondLine" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber"></label>
+                        <input asp-for="PhoneNumber" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="WorkingHours"></label>
+                        <input asp-for="WorkingHours" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control">
+                    </div>
+
+                    <input type="submit" class="btn btn-success btn-lg btn-block" value="Edit" />
+                </form>
+
+                <a asp-action="Index" class="btn btn-primary btn-block btn-lg mt-3">Back to Index</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+}
+
+

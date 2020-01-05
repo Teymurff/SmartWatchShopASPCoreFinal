@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://ftp.site4now.net/sitewatch</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>12/06/2019 12:17:12</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>01/05/2020 00:56:53</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>01/21/2019 16:23:42</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>01/21/2019 16:24:07</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>06/07/2018 00:27:00</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>06/07/2018 00:26:58</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>06/07/2018 00:26:54</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>06/07/2018 00:26:56</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>06/07/2018 00:26:58</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>01/21/2019 16:23:16</publishTime>
+    </File>
+    <File Include="SmartWatchShopFP.deps.json">
+      <publishTime>01/05/2020 01:52:17</publishTime>
+    </File>
+    <File Include="SmartWatchShopFP.dll">
+      <publishTime>01/05/2020 01:23:58</publishTime>
+    </File>
+    <File Include="SmartWatchShopFP.pdb">
+      <publishTime>01/05/2020 01:23:58</publishTime>
+    </File>
+    <File Include="SmartWatchShopFP.runtimeconfig.json">
+      <publishTime>01/05/2020 01:52:17</publishTime>
+    </File>
+    <File Include="SmartWatchShopFP.Views.dll">
+      <publishTime>01/05/2020 01:24:04</publishTime>
+    </File>
+    <File Include="SmartWatchShopFP.Views.pdb">
+      <publishTime>01/05/2020 01:24:04</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>01/21/2019 16:23:03</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>01/21/2019 16:23:07</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>01/21/2019 16:23:07</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>01/21/2019 16:23:07</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>01/21/2019 16:23:08</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>01/05/2020 01:52:17</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert2.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert3.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert4.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert5.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert6.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/alert7.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/model.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/model2.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/alert/model3.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/background/error-bg.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/background/img5.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/background/img5.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/background/login-register.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/background/socialbg.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/big/img1.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/big/img2.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/big/img3.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/big/img4.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/big/img5.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/big/img6.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/chrome-logo.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/firefox-logo.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/internet-logo.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/opera-logo.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/photoshop.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/safari-logo.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/browser/sketch.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/favicon.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/logo-icon.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/logo-light-icon.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/logo-light-text.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/logo-text.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/tooltip/Euclid.png">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/1.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/2.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/3.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/4.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/5.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/6.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/7.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/assets/images/users/8.jpg">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/fonts/fontawesome-webfont3e6e.ttf">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/fonts/icomoonca27.ttf">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/fonts/materialdesignicons-webfont.ttf">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/fonts/Simple-Line-Icons4c82.ttf">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/fonts/themify.ttf">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/bootstrap-switch.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/breadcrumb-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/chat-app-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/contact-app-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/dashboard1.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/dashboard2.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/dashboard3.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/dashboard4.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/dashboard5.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/easy-pie-chart.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/error-pages.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/file-upload.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/float-chart.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/floating-label.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/footable-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/form-icheck.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/google-vector-map.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/icon-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/inbox.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/login-register-lock.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/other-pages.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/pricing-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/progressbar-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/register3.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/ribbon-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/stylish-tooltip.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/tab-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/timeline-vertical-horizontal.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/ui-bootstrap-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/user-card.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/pages/widget-page.css">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/css/style.min.css">
+      <publishTime>10/23/2019 08:28:07</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/custom.js">
+      <publishTime>02/28/2019 14:32:04</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/custom.min.js">
+      <publishTime>02/28/2019 14:32:04</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/dashboard1.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/dashboard2.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/dashboard3.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/dashboard4.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/dashboard5.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/email-decode.min.js">
+      <publishTime>12/06/2019 20:50:31</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/bootstrap-table.init.js">
+      <publishTime>04/13/2019 13:50:07</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/chat.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/flot-data.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/footable-init.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/jasny-bootstrap.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/jquery.PrintArea.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/jsgrid-init.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/mask.js">
+      <publishTime>04/11/2019 09:56:57</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/morris-data.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/toastr.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/validation.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/widget-charts.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/pages/widget-data.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/perfect-scrollbar.jquery.min.js">
+      <publishTime>04/11/2019 09:56:57</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/sidebarmenu.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/admin/dist/js/waves.js">
+      <publishTime>12/06/2018 14:04:23</publishTime>
+    </File>
+    <File Include="wwwroot/images/03e9835a-af2f-44d5-9779-e6efc6e24a83appleblack3.jpeg">
+      <publishTime>12/16/2019 21:07:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/0b30308a-0d60-484d-b852-1fa27ca839b6woncharisma2.jpg">
+      <publishTime>12/11/2019 20:12:42</publishTime>
+    </File>
+    <File Include="wwwroot/images/0c840d49-bc3c-412f-b250-5c358bb80339samsunggal.jpg">
+      <publishTime>12/11/2019 20:58:02</publishTime>
+    </File>
+    <File Include="wwwroot/images/10f7e264-ef30-4156-921b-beaa1b678bcesamsunggal4.jpg">
+      <publishTime>12/11/2019 20:58:02</publishTime>
+    </File>
+    <File Include="wwwroot/images/19b5c2b5-b391-4316-b43d-b518989650a2xiaomib3.jpg">
+      <publishTime>12/12/2019 14:36:00</publishTime>
+    </File>
+    <File Include="wwwroot/images/21eddfc8-5604-4675-a803-8a7ffff1f831apple5black2.jpg">
+      <publishTime>12/10/2019 13:50:26</publishTime>
+    </File>
+    <File Include="wwwroot/images/256c8ed5-5af2-4501-b581-930f35ad9505appleblack4.jpeg">
+      <publishTime>12/16/2019 21:07:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/2df33a81-8650-40b9-a85c-db5fdb5f8c41applegold.jpg">
+      <publishTime>12/16/2019 21:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/images/394860d0-3c2e-426d-87d1-04fc63fea796woncharisma3.jpg">
+      <publishTime>12/11/2019 20:12:42</publishTime>
+    </File>
+    <File Include="wwwroot/images/3b794a6c-e970-4a47-8e57-620550ecc6e6castle.jpg">
+      <publishTime>12/13/2019 19:29:56</publishTime>
+    </File>
+    <File Include="wwwroot/images/3cd694cd-6f08-4685-9b05-5e99a50a1428samsunggal2.jpg">
+      <publishTime>12/11/2019 20:58:02</publishTime>
+    </File>
+    <File Include="wwwroot/images/40eef0ed-b2e9-4861-a76a-d1c428d29985xiaomib.jpg">
+      <publishTime>12/12/2019 14:36:00</publishTime>
+    </File>
+    <File Include="wwwroot/images/41292d2d-288f-448e-98d8-0493f2b3bcfaapple4grayalum2.jpeg">
+      <publishTime>12/28/2019 17:32:48</publishTime>
+    </File>
+    <File Include="wwwroot/images/4c810e83-74d6-4d40-89cd-69042814e667huaweiclassic2.jpg">
+      <publishTime>12/12/2019 14:29:35</publishTime>
+    </File>
+    <File Include="wwwroot/images/4dab1793-20ac-4557-8591-9236173b4256watch-img.jpg">
+      <publishTime>12/14/2019 16:34:42</publishTime>
+    </File>
+    <File Include="wwwroot/images/5225abd9-c7df-41f1-a916-c9bf2278c9b8apple4grayalum.jpeg">
+      <publishTime>12/28/2019 17:32:48</publishTime>
+    </File>
+    <File Include="wwwroot/images/538fd12e-efb5-4adb-9816-54f6f9723df4samsunggalpink2.jpg">
+      <publishTime>12/12/2019 15:10:37</publishTime>
+    </File>
+    <File Include="wwwroot/images/5408f78b-cd50-441e-b4fd-6d7c55379e48woncharisma.jpg">
+      <publishTime>12/11/2019 20:12:42</publishTime>
+    </File>
+    <File Include="wwwroot/images/555f9201-c2bb-4224-a21b-09b9153ac72bexmple - Copy %282%29.jpg">
+      <publishTime>12/11/2019 15:32:49</publishTime>
+    </File>
+    <File Include="wwwroot/images/5e0a5c9e-ef40-4458-9737-91d428d8a656huaweipro2.jpg">
+      <publishTime>12/12/2019 15:05:19</publishTime>
+    </File>
+    <File Include="wwwroot/images/5e91e0f7-9d6c-40ef-b56d-3ba4a4f627a3samsunggalactsilver3.jpg">
+      <publishTime>12/18/2019 18:50:17</publishTime>
+    </File>
+    <File Include="wwwroot/images/6acacb75-aa1e-49e5-86a1-ef6c3d7491e8samsunggalpink4.jpg">
+      <publishTime>12/12/2019 15:10:38</publishTime>
+    </File>
+    <File Include="wwwroot/images/6afb7430-51f1-44d5-96f0-fde5a2b5fd1csamsunggalactive.jpg">
+      <publishTime>12/11/2019 21:20:29</publishTime>
+    </File>
+    <File Include="wwwroot/images/6cec5d8d-ba64-4c2d-96ec-8c606b339a1fapple4grayalum3.jpeg">
+      <publishTime>12/28/2019 17:32:48</publishTime>
+    </File>
+    <File Include="wwwroot/images/6f5134b2-25b1-4b5f-ba22-428f7cc84e74samsunggalactsilver.jpg">
+      <publishTime>12/18/2019 18:50:16</publishTime>
+    </File>
+    <File Include="wwwroot/images/700c5d26-b014-40b8-a62c-433f6941af33appleblack.jpeg">
+      <publishTime>12/16/2019 21:07:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/70391e51-2298-4f31-af59-c648ad00806asamsunggal3.jpg">
+      <publishTime>12/11/2019 20:58:02</publishTime>
+    </File>
+    <File Include="wwwroot/images/7616013d-b3b7-4e19-8b1e-5e9a048a7a17samsunggalactive4.jpg">
+      <publishTime>12/11/2019 21:20:30</publishTime>
+    </File>
+    <File Include="wwwroot/images/76b8e48a-030f-4acb-ae58-ab34712692daapplewhite.png">
+      <publishTime>12/10/2019 13:14:57</publishTime>
+    </File>
+    <File Include="wwwroot/images/7b887cdc-6d25-4a6f-9d33-7f725529e809huaweipro4.jpg">
+      <publishTime>12/12/2019 15:05:19</publishTime>
+    </File>
+    <File Include="wwwroot/images/8096b581-109a-453b-887d-2b0e90d17260samsung42rose4.jpg">
+      <publishTime>12/12/2019 00:17:54</publishTime>
+    </File>
+    <File Include="wwwroot/images/823ec7ba-2cb9-47bc-88d6-da5b9c27a2e1huaweipro3.jpg">
+      <publishTime>12/12/2019 15:05:19</publishTime>
+    </File>
+    <File Include="wwwroot/images/9194486e-4efe-4503-9f2b-e32d0be5b447apple5black3.jpg">
+      <publishTime>12/10/2019 13:50:26</publishTime>
+    </File>
+    <File Include="wwwroot/images/91d1b4fa-5433-4a88-92ca-b9eb8ab3cb07huaweiclassic4.jpg">
+      <publishTime>12/12/2019 14:29:35</publishTime>
+    </File>
+    <File Include="wwwroot/images/96847269-1cc6-452e-9495-e4a5dce75f84samsunggalpink3.jpg">
+      <publishTime>12/12/2019 15:10:37</publishTime>
+    </File>
+    <File Include="wwwroot/images/9ac77d3f-6ebd-46fe-af9d-ee314634a420xiaomib4.jpg">
+      <publishTime>12/12/2019 14:36:00</publishTime>
+    </File>
+    <File Include="wwwroot/images/aa1830c6-1e1d-42a9-bb3e-d9b5defd88a5samsung42rose2.jpg">
+      <publishTime>12/12/2019 00:17:54</publishTime>
+    </File>
+    <File Include="wwwroot/images/ab23f69b-7beb-42b1-9a95-496370355bb5apple5black4.jpg">
+      <publishTime>12/10/2019 13:50:26</publishTime>
+    </File>
+    <File Include="wwwroot/images/ab8d3b16-7d49-43cc-ab7e-15bb62ca2de3xiaomib2.jpg">
+      <publishTime>12/12/2019 14:36:00</publishTime>
+    </File>
+    <File Include="wwwroot/images/ae3bf03e-3beb-4cf4-bfde-a20904ac7374applegold3.jpg">
+      <publishTime>12/16/2019 21:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/images/apple2.jpeg">
+      <publishTime>12/04/2019 21:01:53</publishTime>
+    </File>
+    <File Include="wwwroot/images/apple3.jpeg">
+      <publishTime>12/04/2019 21:02:08</publishTime>
+    </File>
+    <File Include="wwwroot/images/b6f61b64-02d6-40b9-b220-3aa667b3baf3samsung42rose.jpg">
+      <publishTime>12/12/2019 00:17:54</publishTime>
+    </File>
+    <File Include="wwwroot/images/b87f2b31-9433-4680-bd7b-3da7ea02b323applegold2.jpg">
+      <publishTime>12/16/2019 21:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/images/b8de0294-41d1-444a-b31d-c9efc0a2e4b8play-icon.png">
+      <publishTime>12/13/2019 19:25:13</publishTime>
+    </File>
+    <File Include="wwwroot/images/be5f2dab-a22b-4f85-920c-358e08ebaf39exmple.jpg">
+      <publishTime>12/11/2019 15:32:49</publishTime>
+    </File>
+    <File Include="wwwroot/images/bgnotfound.jpg">
+      <publishTime>01/03/2020 22:46:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/c452a67f-f63d-4382-9682-7adec75dfaaasamsunggalpink.jpg">
+      <publishTime>12/12/2019 15:10:37</publishTime>
+    </File>
+    <File Include="wwwroot/images/c7743423-c03c-49d1-aee6-5367146e59cdapplegold4.jpg">
+      <publishTime>12/16/2019 21:01:29</publishTime>
+    </File>
+    <File Include="wwwroot/images/c8f62f55-b0dd-4170-8dfe-297f43114e5bsamsunggalactsilver2.jpg">
+      <publishTime>12/18/2019 18:50:16</publishTime>
+    </File>
+    <File Include="wwwroot/images/cadd9c2b-7074-44cd-9616-303c9b21f1c5exmple - Copy %283%29.jpg">
+      <publishTime>12/11/2019 15:32:49</publishTime>
+    </File>
+    <File Include="wwwroot/images/cardpaypal.jpg">
+      <publishTime>12/27/2019 15:29:40</publishTime>
+    </File>
+    <File Include="wwwroot/images/cbc054f5-5547-4832-8394-0c82d9a70277huaweiclassic3.jpg">
+      <publishTime>12/12/2019 14:29:35</publishTime>
+    </File>
+    <File Include="wwwroot/images/cc696aab-ed63-45d1-a9d0-3cf0bbda04bbapple5black.jpg">
+      <publishTime>12/10/2019 13:50:26</publishTime>
+    </File>
+    <File Include="wwwroot/images/d1ab3240-130e-4b87-9bf1-b9638293765capple4grayalum4.jpeg">
+      <publishTime>12/28/2019 17:32:48</publishTime>
+    </File>
+    <File Include="wwwroot/images/d7b93234-edd2-4ff7-8876-7d49f9d29817exmple - Copy.jpg">
+      <publishTime>12/11/2019 15:32:49</publishTime>
+    </File>
+    <File Include="wwwroot/images/d9a6ce8f-4c00-4ddb-96d1-a747e835c172appleblack2.jpeg">
+      <publishTime>12/16/2019 21:07:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/dd334c1a-3640-49ba-b9be-a15249fd8157huaweipro.jpg">
+      <publishTime>12/12/2019 15:05:19</publishTime>
+    </File>
+    <File Include="wwwroot/images/dd6d0b79-a8c1-49e5-b0db-4c4951a154ddheader-bg.png">
+      <publishTime>12/13/2019 14:11:01</publishTime>
+    </File>
+    <File Include="wwwroot/images/df26ee51-4808-44c6-a403-7f773b945cd0huaweiclassic.jpg">
+      <publishTime>12/12/2019 14:29:35</publishTime>
+    </File>
+    <File Include="wwwroot/images/dff283bf-3b3d-4ac1-a000-b6c04136d1a3samsunggalactive2.jpg">
+      <publishTime>12/11/2019 21:20:30</publishTime>
+    </File>
+    <File Include="wwwroot/images/eb68d82e-f8e7-43be-b8df-6d27d1def837samsung42rose3.jpg">
+      <publishTime>12/12/2019 00:17:54</publishTime>
+    </File>
+    <File Include="wwwroot/images/ed3d4a9f-1747-4a9c-835f-37c48600cd70samsunggalactsilver4.jpg">
+      <publishTime>12/18/2019 18:50:17</publishTime>
+    </File>
+    <File Include="wwwroot/images/efa35ff1-17b3-45b1-ba93-de74fcac4e62woncharisma4.jpg">
+      <publishTime>12/11/2019 20:12:42</publishTime>
+    </File>
+    <File Include="wwwroot/images/f22eba64-25fa-41d0-a751-caff0e4e3130applewhite2.jpg">
+      <publishTime>12/10/2019 13:14:57</publishTime>
+    </File>
+    <File Include="wwwroot/images/faq-bg.jpg">
+      <publishTime>11/28/2019 19:17:31</publishTime>
+    </File>
+    <File Include="wwwroot/images/fd8a2e26-7964-4ee1-ad0d-7c44a01b9f13samsunggalactive3.jpg">
+      <publishTime>12/11/2019 21:20:30</publishTime>
+    </File>
+    <File Include="wwwroot/images/header-bg.png">
+      <publishTime>11/27/2019 14:57:17</publishTime>
+    </File>
+    <File Include="wwwroot/images/icon.png">
+      <publishTime>11/26/2019 20:00:17</publishTime>
+    </File>
+    <File Include="wwwroot/images/logo.png">
+      <publishTime>11/25/2019 16:27:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/u1.jpg">
+      <publishTime>11/26/2019 15:05:51</publishTime>
+    </File>
+    <File Include="wwwroot/images/u2.jpg">
+      <publishTime>11/28/2019 17:37:21</publishTime>
+    </File>
+    <File Include="wwwroot/images/u3.jpg">
+      <publishTime>11/28/2019 17:37:30</publishTime>
+    </File>
+    <File Include="wwwroot/images/u4.jpg">
+      <publishTime>11/28/2019 17:37:40</publishTime>
+    </File>
+    <File Include="wwwroot/images/watch-img.jpg">
+      <publishTime>11/26/2019 12:39:40</publishTime>
+    </File>
+    <File Include="wwwroot/sass/style.css">
+      <publishTime>01/04/2020 01:19:23</publishTime>
+    </File>
+    <File Include="wwwroot/sass/style.css.map">
+      <publishTime>12/05/2019 17:20:55</publishTime>
+    </File>
+    <File Include="wwwroot/sass/style.scss">
+      <publishTime>12/05/2019 17:20:54</publishTime>
+    </File>
+    <File Include="wwwroot/scripts/fontawesome.js">
+      <publishTime>11/26/2019 16:35:36</publishTime>
+    </File>
+    <File Include="wwwroot/scripts/main.js">
+      <publishTime>12/27/2019 20:13:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

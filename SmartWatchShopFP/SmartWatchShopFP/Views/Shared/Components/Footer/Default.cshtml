@@ -1,0 +1,57 @@
+﻿@model Footer
+<!-- Footer Start -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <div class="footer-content">
+                    <h6>About Us</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                    <p class="footer-text">Copyright&copy;2020 All rights reserved</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <div class="footer-content">
+                    <h6>Contact Us</h6>
+                    <div class="items-info">
+                        <i class="infoicon1 fal fa-home-lg-alt"></i>
+                        <div class="items-body ml-3">
+                            <h3>@Model.AddressFirstLine</h3>
+                            <p>@Model.AddressSecondLine</p>
+                        </div>
+                    </div>
+                    <div class="items-info">
+                        <i class="infoicon2 fal fa-tablet-alt"></i>
+                        <div class="items-body ml-3">
+                            <h3>@Model.PhoneNumber</h3>
+                            <p>@Model.WorkingHours</p>
+                        </div>
+                    </div>
+                    <div class="items-info">
+                        <i class="infoicon3 fal fa-envelope"></i>
+                        <div class="items-body ml-3">
+                            <h3>@Model.Email</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-content">
+                    <h6>Follow Us</h6>
+                    <p>Let us be social</p>
+                    <div class="items-social d-flex align-items-center">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->

@@ -1,0 +1,80 @@
+﻿@model HomePageVM
+@{
+    ViewData["Title"] = "ProductDetails";
+}
+
+<partial name="_Pages" />
+<main id="productdetails">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="product-details">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="product-content">
+                            @for (int i = 0; i < Model.Images.Count; i++)
+                            {
+                                if (i == 0)
+                                {
+                                    @if (Model.Product.HasDiscount)
+                                    {
+                                        <div class="product-img" style="background-image: url(/images/@Model.Images.ElementAt(i).ProductImage);"></div>
+                                        <span class="ml-3 align-middle" style="font-size:20px;background:#2566E8;color:#fff;padding:.3em.5em;border-radius:2px;position:absolute;top:10px;left:10px;">Sale</span>
+                                    }
+                                    else
+                                    {
+                                        <div class="product-img" style="background-image: url(/images/@Model.Images.ElementAt(i).ProductImage);"></div>
+                                    }
+                                }
+                                else
+
+                                {
+                                    <img class="ml-1" src="/images/@Model.Images.ElementAt(i).ProductImage" style="height:30%;width:30%;">
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="product-desc">
+                            <h3>@Model.Product.Name</h3>
+                            @if (Model.Product.HasDiscount)
+                            {
+                                <span class="price">@Model.Product.DiscountedPrice AZN</span>
+                            }
+                            else
+                            {
+                                <span class="price">@Model.Product.Price AZN</span>
+                            }
+                            <p class="paragraph">
+                                Even the all-powerful Pointing has no control about
+                                the blind texts it is an almost unorthographic life One day however
+                                a small line of blind text by the name of Lorem Ipsum
+                                decided to leave for the far World of Grammar.
+                            </p>
+                            <p class="info">Brand:<span class="ml-3">@Model.Product.Brand.Name</span></p>
+                            <p class="info">Color:<span class="ml-3">@Model.Product.Color</span></p>
+                            <p class="info mb-5">Availability:<span class="ml-3">@Model.Product.Availability</span></p>
+                           @* <div class="mb-5 info"><span class="mr-3">Quantity:</span><input type="number" min="0" max="100"></div>*@
+                            <div data-id="@Model.Product.Id">
+                                @if (Model.Product.InStock)
+                                {
+                                    <a href="#" class="additemtocart">
+                                        <i class="fad fa-shopping-cart mr-2"></i><span> Add to Cart </span>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="#" hidden>
+                                        <i class="fad fa-shopping-cart mr-2"></i><span> Add to Cart </span>
+                                    </a>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+

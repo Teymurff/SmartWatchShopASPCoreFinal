@@ -1,0 +1,26 @@
+﻿@model Brand
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <input type="submit" class="btn btn-info btn-lg btn-block" value="Submit" />
+                    <a asp-action="Index" class="btn btn-secondary btn-block btn-lg mt-3">Back to Index</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

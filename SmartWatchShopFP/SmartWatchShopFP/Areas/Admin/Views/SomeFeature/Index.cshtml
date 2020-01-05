@@ -1,0 +1,43 @@
+﻿@model List<SomeFeature>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table-bordered table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Paragraph</th>
+                            <th>Icon</th>                       
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="align-middle">@item.Title</td>
+                                <td class="align-middle">@item.Paragraph</td>
+                                <td class="align-middle">@item.Icon</td>                       
+                                <td class="align-middle">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info btn-block">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+}
+

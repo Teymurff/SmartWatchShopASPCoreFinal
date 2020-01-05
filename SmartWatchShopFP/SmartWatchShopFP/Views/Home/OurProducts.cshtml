@@ -1,0 +1,67 @@
+﻿@model HomePageVM
+@{
+    ViewData["Title"] = "OurProducts";
+}
+<partial name="_Pages" />
+<main>
+    <!-- Section Products With Categories Start -->
+    <section class="section-productswithcategories" id="ourproducts" style="background-color:#2566E8">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="category-content col-lg-10">               
+                    <div class="form-group">
+                        <h1>Brand</h1>
+                        <select id="brands" class="form-control form-control-lg" asp-for="Product.BrandId" asp-items="ViewBag.Brands as SelectList">
+                            <option value="">All</option>
+                        </select>
+                        <span asp-validation-for="Product.BrandId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="partial">
+                <partial name="_BrandProductPartial" model="Model" />
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-5 text-center">
+                    <button data-skip="@Model.Products.Count()" data-totalCount="@ViewData["total_products_count"]" class="btn btn-dark" id="loadmorebtn">Load more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Products With Categories End -->
+</main>
+@section scripts{
+    <script>
+        $(document).on("change", "#brands", function (e) {
+            var brandId = $(this).val();
+            $.ajax({
+                url: "/Ajax/GetProductBrand/" + brandId,
+                type: "POST",
+                success: function (r) {
+                    console.log(r);
+                    document.querySelector(".partial").innerHTML = r;
+                }
+            });
+        });
+
+        $(document).on("click", "#loadmorebtn", function () {
+            var count = +$(this).attr("data-skip");
+            var totalCount = +$(this).attr("data-totalCount");
+            $.ajax({
+                url: "/Ajax/LoadMoreProducts?count=" + count,
+                method: "POST",
+                success: function (res) {
+
+                    $(".partial").append(res);
+
+                    var newCount = count + 4;
+                    $("#loadmorebtn").attr("data-skip", newCount);
+
+                    if (newCount >= totalCount) {
+                        $("#loadmorebtn").remove();
+                    }
+                }
+            });
+        });    
+    </script>
+}

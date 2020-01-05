@@ -1,0 +1,44 @@
+﻿@model Footer
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table-bordered table table-striped">
+                    <thead>
+                        <tr>
+                            <th>First Line of Address</th>
+                            <th>Second Line of Address</th>
+                            <th>Phone Number</th>
+                            <th>Working Hours</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">@Model.AddressFirstLine</td>
+                            <td class="align-middle">@Model.AddressSecondLine</td>
+                            <td class="align-middle">@Model.PhoneNumber</td>
+                            <td class="align-middle">@Model.WorkingHours</td>
+                            <td class="align-middle">@Model.Email</td>
+                            <td class="align-middle">
+                                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info btn-block">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+}
+

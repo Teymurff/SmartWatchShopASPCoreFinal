@@ -1,0 +1,27 @@
+﻿@model Brand
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" readonly class="form-control">
+                    </div>
+
+                    <div class="alert alert-dark">
+                        Brand will be deleted permamently. Are you sure?
+                    </div>
+
+                    <input type="submit" class="btn btn-info btn-lg btn-block" value="Delete" />
+                </form>
+
+                <a asp-action="Index" class="btn btn-secondary btn-block btn-lg mt-3">Back to Index</a>
+            </div>
+        </div>
+    </div>
+</div>
+

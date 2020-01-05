@@ -1,0 +1,54 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<partial name="_Pages" />
+<section class="login_part padding_top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="login_part_text text-center">
+                    <div class="login_part_text_iner">
+                        <h2>Not Registered Yet?</h2>
+                        <p>
+                            There are advances being made in science and technology
+                            everyday, and a good example of this
+                        </p>
+                        <a asp-controller="Account" asp-action="Register" class="btn_3">Register With Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="login_part_form">
+                    <div class="login_part_form_iner">
+                        <h3>
+                            Welcome! <br>
+                            Please Sign in
+                        </h3>
+                        <form class="row contact_form" method="POST">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="col-md-12 form-group p_star">
+                                <input asp-for="EmailOrUsername" class="form-control" placeholder="EmailorUsername">
+                                <span asp-validation-for="EmailOrUsername" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input asp-for="Password" class="form-control" placeholder="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                @*<div class="creat_account d-flex align-items-center">
+                                    <input asp-for="RememberMe" type="checkbox" class="ml-3 d-inline form-check-input">
+                                    <label class="ml-5 control-label d-inline" asp-for="RememberMe"> </label>
+                                </div>*@
+                                <button type="submit" value="submit" class="btn_3">
+                                    log in
+                                </button>                          
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

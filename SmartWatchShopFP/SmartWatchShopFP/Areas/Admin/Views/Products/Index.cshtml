@@ -1,0 +1,60 @@
+﻿@model HomePageVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="page-wrapper" style="min-height:304px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <a asp-action="Create" class="mb-5 btn btn-success btn-block btn-lg">
+                    Create New Product
+                </a>
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Has Discount</th>
+                            <th>Discounted Price</th>
+                            <th>Color</th>
+                            <th>Availability</th>
+                            <th>Brand</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Products)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.Price</td>
+                                <td>@item.HasDiscount</td>
+                                <td>@item.DiscountedPrice</td>
+                                <td>@item.Color</td>
+                                <td>@item.Availability</td>
+                                <td>@item.Brand.Name</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">
+                                        <i class="fas fa-pen"></i>
+                                    </a>
+                                    @if (Model.Products.Count() > 2)
+                                    {
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-dark">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+}
+
+

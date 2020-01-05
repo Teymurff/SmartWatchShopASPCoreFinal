@@ -1,0 +1,35 @@
+﻿@model HomePageVM
+
+<div class="row">
+    @foreach (var item in Model.Products.Where(s => s.Status == true))
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="product-content">
+                @if (item.HasDiscount)
+                {
+                    <img class="img-fluid" style="height:230px;" src="~/images/@item.Images.FirstOrDefault(v=>v.ProductId==item.Id).ProductImage" alt="watchproduct">
+                    <span class="ml-3 align-middle" style="font-size:11px;background:#2566E8;color:#fff;padding:.3em.5em;border-radius:2px;position:absolute;top:10px;left:10px;">Sale</span>
+                }
+                else
+                {
+                    <img class="img-fluid" style="height:230px;" src="~/images/@item.Images.FirstOrDefault(v=>v.ProductId==item.Id).ProductImage" alt="watchproduct">
+                }
+                    <div class="items-content">
+                        <h4>@item.Name</h4>
+                        @if (item.HasDiscount)
+                        {
+                            <div class="d-flex align-items-center justify-content-center">
+                            <h6 style="font-size:16px; text-decoration:line-through;">@item.Price AZN</h6>
+                            <h6 style="font-size:16px;" class="ml-3">@item.DiscountedPrice AZN</h6>
+                                </div>
+                        }
+                        else
+                        {
+                            <h6>@item.Price AZN</h6>
+                        }
+                        <a asp-controller="Home"  asp-action="ProductDetails" asp-route-id="@item.Id">Product Details</a>
+                    </div>
+            </div>
+        </div>
+    }
+</div>
